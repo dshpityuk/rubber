@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: normal;
     font-style: normal;
 }
@@ -20,32 +20,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    width: 1110px;
+    max-width: 1230px;
+    min-width: 991px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* !-------------------top-header------------------------- */
 
 .top_header {
+    padding: 17px 69px 15px 0;
     background-color: #D9D9D9;
 }
 
-.top_menu {
-    margin: 14px 0 14px 0;
-    float: right;
-
+.top_menu li {
+    display: inline-block;
 }
 
-.top_menu li {
-    margin-left: 25px;
-    list-style: none;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
-
+.top_menu {
+    float: right;
 }
 
 .top_menu a {
+    margin-left: 28px;
+    line-height: 16px;
+    list-style: none;
+    font-size: 14px;
     color: #333333;
     text-decoration: none;
 }
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header_call {
-    margin-top: 20px;
+    margin: 20px 70px 0 0;
     float: right;
 }
 
@@ -98,20 +98,13 @@ h1, h2, h3, h4, h5, h6 {
 /* ?-------------------bot-header------------------------- */
 
 .bot_header {
-    padding: 28px 0 37px 0;
-    margin-bottom: -10px;
+    padding: 31px 69px 33px 0;
     text-align: center;
 }
 
-.bot_header-nav {
-    margin-right: 16px;
-    padding-right: 29px;
-
-}
-
 .bot_header a {
-    padding-left: 31px;
     font-size: 16px;
+    margin: 0 19px;
     line-height: 19px;
     color: #000000;
     text-decoration: none;
@@ -128,21 +121,19 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #F13C6E;
 }
 
-.chair_left {
+.chair_info {
+    width: 50%;
+    float: left;
     padding-top: 192px;
+    padding-bottom: 193px;
 }
 
-.chair_right {
+.chair_img img {
     padding-top: 20px;
-    float: right;
-}
-
-.chair_right img {
-    margin-right: 83px;
+    float: left;
 }
 
 .chair_title {
-    letter-spacing: -2px;
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
@@ -150,13 +141,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .chair_descr {
-    margin-top: 42px;
+    margin-top: 31px;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 20px;
     color: #FFFFFF;
 }
 
-.chair_left .chair_btn {
+.chair_info .chair_btn {
     width: 170px;
     padding: 10px 26px;
     margin-top: 51px;
@@ -168,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
-.chair_left button:hover {
+.chair_info button:hover {
     opacity: 80%;
 }
 
@@ -176,28 +167,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .good {
     background-color: #EFEFEF;
-    padding-bottom: 89px;
+    padding-bottom: 59px;
 }
 
 .good_title {
-    padding-top: 75px;
+    padding: 75px 0 38px 0;
+
     font-weight: 700;
     font-size: 24px;
     color: #000000;
 }
 
+.good_item-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    padding: 0 15px 30px 15px;
+}
+
 .good_items {
     padding-left: 0;
+    margin: 0 -15px;
     list-style: none;
     font-size: 0;
 }
 
 .good_item {
-    margin: 38px 30px 0 0;
     padding: 15px 30px;
-    display: inline-block;
-    vertical-align: top;
-    width: 255px;
     text-align: center;
     background-color: #fff;
 }
@@ -209,10 +205,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .good_item img:hover {
     opacity: 60%;
-}
-
-.good_items .mr-0 {
-    margin-right: 0;
 }
 
 .good_descr {
@@ -239,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .good_item button {
-    margin-top: 8px;
+    margin-top: 20px;
     margin-bottom: 7px;
     width: 130px;
     height: 35px;
@@ -260,19 +252,27 @@ h1, h2, h3, h4, h5, h6 {
 
 /* !====================footer================== */
 
-.footer_items {
-
-    width: 255px;
-    float: left;
-    margin-right: 30px;
+.footer_top {
     margin-top: 82px;
+}
+
+.footer_items-wrapper {
+    font-size: 0;
+    padding: 0 -15px;
+}
+
+.footer_items {
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .footer_content-title {
     text-align: left;
     font-weight: 500;
     font-size: 16px;
-    line-height: 140.62%;
     color: #000000;
     border-bottom: 1px solid #EFEFEF;
     padding-bottom: 44px;
@@ -280,9 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer_item {
-    width: 82px;
     padding: 0;
-    font-size: 0;
     list-style-type: none;
 }
 
@@ -295,10 +293,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer_item a:hover {
     color: #F13C6E;
-}
-
-.mr-0 {
-    margin-right: 0;
 }
 
 /* ?================footer_mid================ */
