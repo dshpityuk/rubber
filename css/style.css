@@ -108,7 +108,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 19px;
     color: #000000;
     text-decoration: none;
-
 }
 
 .bot_header a:hover {
@@ -232,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .good_item button {
     margin-top: 20px;
-    margin-bottom: 7px;
+    margin-bottom:  7px;
     width: 130px;
     height: 35px;
     font-size: 14px;
@@ -312,23 +311,27 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 80%;
 }
 
-.facebook {
-    background-image: url('../icons/Group\ 2.svg');
-    width: 45px;
-    height: 45px;
+.facebook:hover svg path {
+    fill: black;
+}
+.facebook:hover svg circle {
+    stroke: black;
 }
 
-.youtube {
-    background-image: url('../icons/Group\ 4.svg');
-    width: 45px;
-    height: 45px;
+.youtube:hover .qwer {
+    fill: black;
 }
 
-.instagram {
-    background-image: url('../icons/Group\ 3.svg');
-    width: 45px;
-    height: 45px;
+.instagram:hover svg circle {
+    stroke: black;
 }
+
+.instagram:hover path {
+    fill: black;
+}
+
+
+
 
 .footer_call {
     float: right;
